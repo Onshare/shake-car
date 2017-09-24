@@ -1,13 +1,21 @@
 package com.android.shake;
 
-import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
+import android.view.View;
 
-public class MainActivity extends AppCompatActivity {
+import com.jazz.libs.controller.BaseActivity;
+import com.jazz.libs.controller.BasePresent;
 
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+public abstract class MainActivity<P extends BasePresent>  extends BaseActivity<P> implements View.OnClickListener{
+
+    protected void addOnClick(View... view) {
+        if (view != null) {
+            for (View v : view) {
+                if (v != null) {
+                    v.setOnClickListener(this);
+                }
+            }
+        }
     }
+
+
 }

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="41.5dp"
+        android:background="#F24F30">
+
+        <View
+            android:id="@+id/serv_back"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:background="@mipmap/back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="客服中心"
+            android:textColor="@android:color/white"
+            android:textSize="15.5sp" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/serv_rule"
+        android:layout_width="match_parent"
+        android:layout_height="42.5dp"
+        android:background="@android:color/white">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="16dp"
+            android:text="活动规则"
+            android:textColor="#484747"
+            android:textSize="15.5sp" />
+
+        <View
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center_vertical|right"
+            android:layout_marginRight="10dp"
+            android:background="@mipmap/go" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/serv_fault"
+        android:layout_width="match_parent"
+        android:layout_height="42.5dp"
+        android:layout_marginTop="9dp"
+        android:background="@android:color/white">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="16dp"
+            android:text="设备故障"
+            android:textColor="#484747"
+            android:textSize="15.5sp" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/serv_remind"
+        android:layout_width="match_parent"
+        android:layout_height="42.5dp"
+        android:layout_marginTop="9dp"
+        android:background="@android:color/white">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="16dp"
+            android:text="警告提醒"
+            android:textColor="#484747"
+            android:textSize="15.5sp" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/serv_lianxi"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="23dp"
+        android:background="@drawable/service_lianxi"
+        android:gravity="center"
+        android:text="联系客服"
+        android:textColor="@android:color/white"
+        android:textSize="17sp" />
+</LinearLayout>
