@@ -41,8 +41,8 @@
             fresco:placeholderImage="@mipmap/logo"
             fresco:placeholderImageScaleType="fitCenter"
             fresco:roundAsCircle="true"
-            fresco:roundingBorderWidth="1dp"
-            fresco:roundingBorderColor="@android:color/white"/>
+            fresco:roundingBorderColor="@android:color/white"
+            fresco:roundingBorderWidth="1dp" />
 
         <TextView
             android:id="@+id/me_alias"

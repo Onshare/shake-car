@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="41.5dp"
+        android:background="#F24F30">
+
+        <View
+            android:id="@+id/record_back"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:background="@mipmap/back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="我的消息"
+            android:textColor="@android:color/white"
+            android:textSize="15.5sp" />
+    </FrameLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/record_ww"
+            android:layout_width="82dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="4dp"
+            android:layout_marginTop="4dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="娃娃机"
+                android:textColor="@color/home_selector_title"
+                android:textSize="15sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="17dp"
+                android:layout_marginRight="17dp"
+                android:background="@drawable/home_selector_title_bar" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/record_car"
+            android:layout_width="82dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="4dp"
+            android:layout_marginTop="4dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="摇摇车"
+                android:textColor="@color/home_selector_title"
+                android:textSize="15sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="17dp"
+                android:layout_marginRight="17dp"
+                android:background="@drawable/home_selector_title_bar" />
+        </RelativeLayout>
+    </LinearLayout>
+    <ListView
+        android:id="@+id/record_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#f5f5f5"
+        android:dividerHeight="8dp"
+        android:divider="@android:color/transparent"
+        android:padding="12dp"
+        android:listSelector="@android:color/transparent"
+        android:scrollbars="none"/>
+</LinearLayout>

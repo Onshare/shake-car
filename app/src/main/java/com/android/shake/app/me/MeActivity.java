@@ -7,6 +7,11 @@ import android.widget.TextView;
 
 import com.android.shake.MainActivity;
 import com.android.shake.R;
+import com.android.shake.app.exchange.ExchangeActivity;
+import com.android.shake.app.money.MoneyActivity;
+import com.android.shake.app.msg.MsgActivity;
+import com.android.shake.app.record.RecordActivity;
+import com.android.shake.app.register.RegisterActivity;
 import com.android.shake.app.setting.SettingActivity;
 import com.facebook.drawee.view.SimpleDraweeView;
 
@@ -38,7 +43,7 @@ public class MeActivity extends MainActivity<MePresenter>{
         exchange = findViewById(R.id.me_exchange);
         message = findViewById(R.id.me_message);
 
-        addOnClick(mBack, mSetting, record, money, friend, exchange, message);
+        addOnClick(mBack, mSetting, avatar, record, money, friend, exchange, message);
     }
 
     @Override
@@ -51,15 +56,22 @@ public class MeActivity extends MainActivity<MePresenter>{
             case R.id.me_setting:
                 startActivity(new Intent(this, SettingActivity.class));
                 break;
+            case R.id.me_avatar:
+                startActivity(new Intent(this, RegisterActivity.class));
+                break;
             case R.id.me_record:
+                startActivity(new Intent(this, RecordActivity.class));
                 break;
             case R.id.me_money:
+                startActivity(new Intent(this, MoneyActivity.class));
                 break;
             case R.id.me_friend:
                 break;
             case R.id.me_exchange:
+                startActivity(new Intent(this, ExchangeActivity.class));
                 break;
             case R.id.me_message:
+                startActivity(new Intent(this, MsgActivity.class));
                 break;
             default:
         }

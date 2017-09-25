@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="41.5dp"
+        android:background="#F24F30">
+
+        <View
+            android:id="@+id/exchange_back"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:background="@mipmap/back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="优惠兑换"
+            android:textColor="@android:color/white"
+            android:textSize="15.5sp" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:background="@android:color/white"
+        android:orientation="vertical"
+        android:paddingBottom="25dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30.5dp"
+            android:layout_marginTop="11.5dp"
+            android:text="兑换积分"
+            android:textColor="#484747"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/exchange_jifen_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30.5dp"
+            android:layout_marginTop="11.5dp"
+            android:text="您可用的积分：38"
+            android:textColor="#f24f30"
+            android:textSize="13sp" />
+
+        <EditText
+            android:id="@+id/exchange_jifen_edit"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginLeft="7.5dp"
+            android:layout_marginRight="7.5dp"
+            android:layout_marginTop="18dp"
+            android:background="@drawable/exchange_edit"
+            android:gravity="center_vertical"
+            android:hint="请输入您要兑换的积分"
+            android:maxLines="1"
+            android:paddingLeft="23dp"
+            android:textColor="#484747"
+            android:textColorHint="#adacac"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/exchange_jifen_submit"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="11dp"
+        android:layout_marginTop="7dp"
+        android:background="@drawable/exchange_submit"
+        android:gravity="center"
+        android:text="立即兑换"
+        android:textColor="@android:color/white"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:background="@android:color/white"
+        android:orientation="vertical"
+        android:paddingBottom="25dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30.5dp"
+            android:layout_marginTop="11.5dp"
+            android:text="邀请码兑换"
+            android:textColor="#484747"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30.5dp"
+            android:layout_marginTop="11.5dp"
+            android:text="请正确输入优惠码"
+            android:textColor="#f24f30"
+            android:textSize="13sp" />
+
+        <EditText
+            android:id="@+id/exchange_youhui_edit"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginLeft="7.5dp"
+            android:layout_marginRight="7.5dp"
+            android:layout_marginTop="18dp"
+            android:background="@drawable/exchange_edit"
+            android:gravity="center_vertical"
+            android:hint="请输入您的优惠码"
+            android:maxLines="1"
+            android:paddingLeft="23dp"
+            android:textColor="#484747"
+            android:textColorHint="#adacac"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/exchange_youhui_submit"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="11dp"
+        android:layout_marginTop="7dp"
+        android:background="@drawable/exchange_submit"
+        android:gravity="center"
+        android:text="立即兑换"
+        android:textColor="@android:color/white"
+        android:textSize="16sp" />
+</LinearLayout>
