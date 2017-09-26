@@ -48,6 +48,7 @@
         <activity android:name=".app.msg.MsgActivity" android:screenOrientation="portrait"/>
         <activity android:name=".app.record.RecordActivity" android:screenOrientation="portrait"/>
         <activity android:name=".app.exchange.ExchangeActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".app.share.ShareActivity" android:screenOrientation="portrait"/>
     </application>
 
 </manifest>

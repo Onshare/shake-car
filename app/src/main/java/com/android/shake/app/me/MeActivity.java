@@ -13,6 +13,7 @@ import com.android.shake.app.msg.MsgActivity;
 import com.android.shake.app.record.RecordActivity;
 import com.android.shake.app.register.RegisterActivity;
 import com.android.shake.app.setting.SettingActivity;
+import com.android.shake.app.share.ShareActivity;
 import com.facebook.drawee.view.SimpleDraweeView;
 
 /**
@@ -66,6 +67,7 @@ public class MeActivity extends MainActivity<MePresenter>{
                 startActivity(new Intent(this, MoneyActivity.class));
                 break;
             case R.id.me_friend:
+                startActivity(new Intent(this, ShareActivity.class));
                 break;
             case R.id.me_exchange:
                 startActivity(new Intent(this, ExchangeActivity.class));
